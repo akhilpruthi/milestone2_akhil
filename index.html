@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- !-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+
+    <script>
+        function displayData() {
+            const name = document.getElementById('name').value;
+            const mail = document.getElementById('mail').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            if ((name == null || name == "") && (mail == null || mail == "") || (mail == typeof (mail)) && (subject == null || subject == "") && (message == null || message == "")) {
+                alert("Please Fill All Required Fields");
+            } else {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if (mail.match(mailformat)) {
+                    alert(`Form Data submitted successfuly!\n
+                    Name: ${name} \n
+                    Email: ${mail} \n
+                    Subject: ${subject} \n
+                    Message: ${message} \n
+                    `);
+                } else {
+                    alert("invalid email address");
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- container fluid 1 starts -->
+    <div class="container-fluid" style="background-color:#007A6B; color: white;">
+        <div class="row container mx-auto">
+            <div class="col-sm-4" style="background-color:#007A6B;">
+                <p style="float: left;"><i class="fa fa-envelope-o">&nbsp;</i>akhil@rtesoftwares.com</p>
+                <p style="float: right;"><i class="fa fa-mobile-phone">&nbsp;</i>+91 9888946460</p>
+            </div>
+            <div class="col-sm-4" style="background-color:#007A6B;"></div>
+            <div class="col-sm-4" style="background-color:#007A6B;float: right;">
+                <span style="float: right; margin-right:16px"><i class="fa fa-twitter"></i></span>
+                <span style="float: right; margin-right:16px"><i class="fa fa-facebook-square"></i></span>
+                <span style="float: right; margin-right:16px"><i class="fa fa-instagram"></i></span>
+                <span style="float: right; margin-right:16px"><i class="fa fa-linkedin-square"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 1 ends -->
+    <!-- container fluid 2 starts -->
+    <div class="container-fluid sticky-top" style="height: 50px; background-color: #008374; color: white;">
+        <div class=" row container mx-auto">
+            <div class="col-2 text-white">
+                <h3>Impact</h3>
+            </div>
+            <div class="col-4" style="float: left;"></div>
+            <div class="col-6 text-white" style="float: right;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " style="color: white;" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " style="color: white;" href="#contact">Contact</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 2 ends -->
+    <!-- container fluid 3 starts -->
+    <div class="container-fluid " style="background-color: #008374; height: 500px; position: relative; color: white;">
+        <div class=" row container mx-auto">
+            <div class="col-6" style="background-color: #008374; float: left; margin-top: 100px;">
+                <h1 id="homepage">Welcome to Impact</h1>
+                <p>
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                    organization, WWF works in 100 countries and is supported by 1.2 million members in the United
+                    States and close to 5 million globally.
+                </p>
+                <button type="button" class="btn btn-secondary"
+                    style="border-radius: 15px; background-color:#008F81; border: transparent;">Get Started</button>
+                <button type="button" class="btn btn-secondary"
+                    style="border: hidden; background-color:#008F81; border: transparent;">Watch video</button>
+            </div>
+            <div class="col-6">
+                <img class="img-fluid" src="./images/Week2-Milestone (1).png" alt="Chania" />
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 3 ends -->
+    <!-- container fluid 4 starts -->
+    <div class="container-fluid" style="position: absolute; top: 500px; color: white;">
+        <div class="row container mx-auto">
+            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
+                <span style="position: relative; top: 50%;"><i class="fas fa-tv" style='font-size:32px'></i></span>
+                <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
+
+            </div>
+            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
+                <span style="position: relative; top: 50%;"><i class="fa fa-diamond" style='font-size:32px'></i></span>
+                <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
+            </div>
+            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
+                <span style="position: relative; top: 50%;"><i class='fas fa-map-marker-alt'
+                        style='font-size:32px'></i></span>
+                <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
+            </div>
+            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
+                <span style="position: relative; top: 50%;"><i class="fa fa-h-square" style='font-size:32px'
+                        aria-hidden="true"></i></span>
+                <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 4 ends -->
+    <!-- container fluid 5 starts -->
+    <div class="container-fluid " style="background-color: white;  margin-top: 175px;">
+        <div class="container text-center">
+            <h2 id="about"><b>About Us</b></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio aspernatur nulla aliquid ea
+                doloremque tempora, a non architecto aliquam corporis autem nostrum, culpa at quis sit veniam libero
+                iste!</p>
+            <div class="row justify-content-around">
+                <div class="col-6" style="background-color: white;">
+                    <h3><b>Lorem ipsum dolor sit amet consectetur</b> </h3>
+                </div>
+                <div class="col-6" style="background-color: white;">
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium beatae voluptatibus</i>
+                    </p>
+                </div>
+                <div class="col -6" style="background-color: white; height: 600px; padding: 0px;">
+                    <img class="rounded" src="./images/MicrosoftTeams-image (1) (1).png" width="550px" height="400px" />
+                    <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                        vero, architecto deleniti nihil possimus exercitationem delectus tempora facere consequuntur
+                        ipsam.</p>
+                    <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam
+                        fugit dolore at saepe, voluptates voluptatibus cumque numquam est adipisci debitis, consequuntur
+                        optio atque iure, nam ullam enim laudantium quibusdam.</p>
+                </div>
+                <div class="col-6" style="background-color: white;height: 600px; ">
+                    <ul style="list-style: none; text-align: left; padding: 0px ">
+                        <li>
+                            <span><i class="fa fa-check-circle">&nbsp;</i>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-check-circle">&nbsp;</i>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-check-circle">&nbsp;</i>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.Quasi quisquam fugit dolore at saepe, voluptates voluptatibus cumque
+                                numquam est adipisci debitis, consequuntur optio atque iure, nam ullam enim laudantium
+                                quibusdam.</span>
+                        </li>
+                    </ul>
+                    <p style="text-align: justify;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatum rerum nam veritatis
+                        natus quam vitae error quis pariatur distinctio corporis, odio facere nisi expedita maxime optio
+                        nulla maiores magni!
+                    </p>
+                    <img class="rounded" src="./images/MicrosoftTeams-image (2) (1).png" alt="no image found"
+                        width="550px" height="330px" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 5 ends  -->
+    <!-- container fluid 6 starts -->
+    <div class="container fluid mt-5">
+        <div class="container col-12">
+            <iframe src="https://www.youtube.com/embed/CJhi87SyNJs?autoplay=1" allow="autoplay"
+                title="W3Schools Free Online Web Tutorials"
+                style="width: 100%; height: 500px; border-radius: 18px;"></iframe>
+        </div>
+    </div>
+    <!-- container fluid 6 ends -->
+    <!-- container fluid 7 starts -->
+    <div class="container-fluid mx-auto mt-5" style="background-color: #F6F6F6; padding: 0; ">
+        <div class="container">
+            <div class="col-12" style="text-align: center;">
+                <h2 id="services">Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, placeat inventore laudantium quae
+                    exercitationem nulla vitae animi sint quas suscipit earum facere provident nobis odio doloribus ex
+                    ab minima aut.</p>
+            </div>
+            <div class="row">
+                <div class="col-4 "
+                    style="background-color: white; border: 10px solid #F6F6F6; border-radius: 15px; padding: 30px;">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-eye" style="font-size:36px"></i></span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+                </div>
+                <div class="col-4"
+                    style="background-color: white; border: 10px solid #F6F6F6; border-radius: 15px; padding: 30px; ">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-exclamation-triangle"
+                            style="font-size:36px"></i>
+                    </span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+
+                </div>
+                <div class="col-4"
+                    style="background-color: white; border: 10px solid #F6F6F6; border-radius: 15px; padding: 30px; ">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-fighter-jet"
+                            style="font-size:36px;"></i>
+                    </span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+
+                </div>
+                <div class="col-4"
+                    style="background-color: white; border: 10px solid #F6F6F6; border-radius: 15px;padding: 30px; ">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-flash" style="font-size:36px"></i>
+                    </span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+
+                </div>
+                <div class="col-4"
+                    style="background-color: white; border: 10px solid #F6F6F6; border-radius: 15px; padding: 30px; ">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-gears" style="font-size:36px"></i>
+                    </span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+
+                </div>
+                <div class="col-4"
+                    style=" background-color: white; border: 10px solid #F6F6F6; border-radius: 15px; padding: 30px; ">
+                    <span style="position: relative; top: 10%;"><i class="fa fa-line-chart"
+                            style="font-size:36px"></i></span>
+                    <h3 style="position: relative; top: 13%;"><u>Eosle Commodi</u></h3>
+                    <small style="position: relative; top: 9%;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Officia aliquid harum exercitationem quia. Dolorum dolore fugiat eligendi pariatur
+                        deleniti ipsam odio dolorem ullam perspiciatis voluptate illum ex, sint amet
+                        voluptatibus.</small>
+                    <p style="position: relative; top: 10%;"><b><a style="color: green;" href="default.asp"
+                                target="_blank">Read More <i class='fas fa-arrow-right'></i> </a></b></p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- container fluid 7 ends -->
+    <!-- container fluid 8 starts -->
+    <div class="container-fluid mt-5 mt-5" style="background-color: white; height: 500px;">
+        <div class="container">
+            <div class="container mx-auto heading" style="text-align: center;">
+                <h2 id="team"><b>Our Team</b></h2>
+                <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nostrum ipsam ex aliquid
+                        optio fugit voluptate dolor amet perspiciatis, quod eligendi id quos unde expedita at ut
+                        quibusdam pariatur beatae?</small></p>
+            </div>
+            <div class="row mx-auto">
+                <div class="col col-md-offset-2"
+                    style="height:320px; background-color: white; border:10px solid #F6F6F6; text-align: center;">
+                    <img src="./images/meme2.jpeg" class="image-fluid" />
+                    <h5"><b>walter white</b></h5>
+                        <br />
+                        <small><i>Web Developer</i></small>
+                        <div>
+                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                        </div>
+                </div>
+                <div class="col col-md-offset-2"
+                    style="height:320px; background-color: white; border:10px solid #F6F6F6; border-radius:15px ; text-align: center;">
+                    <img src="./images/meme2.jpeg" class="image-fluid" />
+                    <h5"><b>walter white</b></h5>
+                        <br />
+                        <small><i>Web Developer</i></small>
+                        <div>
+                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                        </div>
+                </div>
+                <div class="col col-md-offset-2"
+                    style="height:320px; background-color: white; border:10px solid #F6F6F6;border-radius:15px ; text-align: center;">
+                    <img src="./images/meme2.jpeg" class="image-fluid" />
+                    <h5"><b>walter white</b></h5>
+                        <br />
+                        <small><i>Web Developer</i></small>
+                        <div>
+                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                        </div>
+                </div>
+                <div class="col col-md-offset-2"
+                    style="height:320px; background-color: white; border:10px solid #F6F6F6;border-radius:15px ; text-align: center;">
+                    <img src="./images/meme2.jpeg" class="image-fluid" />
+                    <h5"><b>walter white</b></h5>
+                        <br />
+                        <small><i>Web Developer</i></small>
+                        <div>
+                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- container fluid 8 ends -->
+    <!-- container fluid 9 starts -->
+    <div class="container-fluid " style=" height: 550px;">
+        <div class="container">
+            <div class="container" style="text-align: center;">
+                <h2 id="contact">Contact</h2>
+                <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magnam ullam aut natus hic
+                        facilis necessitatibus.</small></p>
+            </div>
+            <div class="row">
+                <div class="col-4" style="background-color: #007A6B; height: 450px;">
+                    <div class="column">
+                        <div class="row"
+                            style="height:100px; background-color:#008374; border:2px solid #007A6B; margin:10px">
+                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i
+                                    class='fas fa-map-marker-alt' style='font-size:28px'>&nbsp;</i></div>
+                            <div class="col-9" style="text-align: left; padding-left: 0px;top: 15%;">
+                                Location <br /> A108 Adam Street,New York,NY
+                            </div>
+                        </div>
+                        <div class="row"
+                            style="height:100px; background-color:#008374; border:2px solid #007A6B; margin:10px">
+                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i
+                                    class='fa fa-envelope' style='font-size:24px'>&nbsp;</i></div>
+                            <div class="col-9" style="text-align: left; padding-left: 0px;top: 15%;">
+                                Email <br /> info@example.com
+                            </div>
+                        </div>
+                        <div class="row"
+                            style="height:100px; background-color:#008374; border:2px solid #007A6B; margin:10px">
+                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i
+                                    class='fa fa-mobile-phone' style='font-size:40px'>&nbsp;</i></div>
+                            <div class="col-9" style="text-align: left; padding-left: 0px;top: 15%;">
+                                Call: <br /> +1 1234567890
+                            </div>
+                        </div>
+                        <div class="row"
+                            style="height:100px; background-color:#008374; border:2px solid #007A6B; margin:10px">
+                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i
+                                    class='fa fa-clock-o' style='font-size:28px'>&nbsp;</i></div>
+                            <div class="col-9" style="text-align: left; padding-left: 0px;top: 15%;">
+                                Open Hours: <br />Mon-Sat: 11AM-23PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8" style="background-color: whitesmoke ;height : 450px;">
+                    <form>
+                        <div class="row mx-auto mt-5">
+                            <div class="col-6">
+                                <input type="text" id="name" name="Name" style="width: 100%;" placeholder="Your Name"
+                                    required />
+                            </div>
+                            <div class="col-6">
+                                <input type="email" id="mail" name="Email" style="width: 100%;" placeholder="Your Email"
+                                    required />
+                                <!-- <input type="email" id="email" name="email" style="width: 100%;"
+                                    placeholder="Your Email" required> -->
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="text" id="subject" name="subject" placeholder="Subject.."
+                                    style="width:100%;" required />
+                            </div>
+                            <div class="col-12 mt-3">
+                                <textarea id="message" name="message" placeholder="Mesage" required
+                                    style="width:100%; height:200px"></textarea>
+
+                            </div>
+                            <div class="col-12 text-center mt-2">
+                                <button type="button" class="btn " onclick="displayData()"
+                                    style="background-color: #008374; border-radius: 25px; width:150px; color: white;">Send
+                                    Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container fluid 9 ends  -->
+    <!-- container  fluid 10 starts-->
+    <div class="container-fluid mt-5" style="background-color: #008374;; color: white;">
+        <div class="row container mx-auto">
+            <div class="col-5 mt-5">
+                <h3>impact</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia veritatis totam tempora quam
+                    blanditiis aliquam tempore, dicta odio dolor voluptatum mollitia libero, soluta porro delectus quos
+                    cum, autem adipisci.</p>
+
+                <div class="mt-5">
+                    <span
+                        style=" margin-right:20px ; padding:20px;  display: inline-block;border-radius: 60px;box-shadow: 0 0 2px white;padding: 0.5em 0.6em; filter: brightness(0) invert(1);"><i
+                            class="fa fa-twitter"></i></span>
+                    <span
+                        style=" margin-right:20px ; padding:20px;  display: inline-block;border-radius: 60px;box-shadow: 0 0 2px white;padding: 0.5em 0.6em;filter: brightness(0) invert(1);"><i
+                            class="fa fa-facebook-square"></i></span>
+                    <span
+                        style=" margin-right:20px ; padding:20px;  display: inline-block;border-radius: 60px;box-shadow: 0 0 2px white;padding: 0.5em 0.6em;filter: brightness(0) invert(1);"><i
+                            class="fa fa-instagram"></i></span>
+                    <span
+                        style=" margin-right:20px ; padding:20px;  display: inline-block;border-radius: 60px;box-shadow: 0 0 2px white;padding: 0.5em 0.6em;filter: brightness(0) invert(1);"><i
+                            class="fa fa-linkedin-square"></i></span>
+                </div>
+
+            </div>
+            <div class="col-2 mt-5">
+                <h3>Useful Links</h3>
+                <ul style="list-style: none;">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Service</li>
+                    <li>Terms of service</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+            <div class="col-2 mt-5">
+                <h3>Our Service</h3>
+                <ul style="list-style: none;">
+                    <li>Web Design</li>
+                    <li>Web Devlopment</li>
+                    <li>Product Management</li>
+                    <li>Marketing</li>
+                    <li>Graphic Design</li>
+                </ul>
+            </div>
+            <div class="col-2 mt-5">
+                <h3>Contact Us</h3>
+                <ul style="list-style: none;">
+                    <li>A108 Adam Street</li>
+                    <li>New York,NY 535022</li>
+                    <li>United States</li>
+                    <li></li>
+                    <li><b>Phone:</b> +1 1234567890</li>
+                    <li><b>Email:</b>info@example.com</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- container fluid 10 ends  -->
+
+
+</body>
+
+</html>
