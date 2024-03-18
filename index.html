@@ -25,6 +25,53 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        nav .navbar-nav  a:hover{
+            font-family:'Gill Sans';
+            font-weight: 500;
+            color: white !important;
+        }
+ 
+        nav .navbar-nav  a {
+            color: #95C7B3 !important;
+            } 
+            
+        /* .navbar-nav a:hover {
+            color: white;
+        } */
+
+        .fa-twitter{
+            color:lightgrey;
+        }
+        .fa-twitter-square{
+            color:black;
+        }
+        .fa-facebook-square{
+            color:lightgrey;
+        }
+        .fa-instagram{
+            color:lightgrey;
+        }
+        .fa-linkedin-square{
+            color:lightgrey;
+        }
+
+        .fa-twitter:hover{
+            color:white;
+        }
+        .fa-twitter-square{
+            color:white;
+        }
+        .fa-facebook-square:hover{
+            color:white;
+        }
+        .fa-instagram:hover{
+            color:white;
+        }
+        .fa-linkedin-square:hover{
+            color:white;
+        }
+        
     </style>
 
 
@@ -64,7 +111,7 @@
             </div>
             <div class="col-sm-4" style="background-color:#007A6B;"></div>
             <div class="col-sm-4" style="background-color:#007A6B;float: right;">
-                <span style="float: right; margin-right:16px"><i class="fa fa-twitter"></i></span>
+                <span style="float: right; margin-right:16px"><i class="fa fa-twitter"><a class="icon_top"></a></i></span>
                 <span style="float: right; margin-right:16px"><i class="fa fa-facebook-square"></i></span>
                 <span style="float: right; margin-right:16px"><i class="fa fa-instagram"></i></span>
                 <span style="float: right; margin-right:16px"><i class="fa fa-linkedin-square"></i></span>
@@ -74,36 +121,31 @@
     <!-- container fluid 1 ends -->
     <!-- container fluid 2 starts -->
     <div class="container-fluid sticky-top" style="height: 50px; background-color: #008374; color: white;">
-        <div class=" row container mx-auto">
-            <div class="col-2 text-white">
-                <h3>Impact</h3>
-            </div>
-            <div class="col-4" style="float: left;"></div>
-            <div class="col-6 text-white" style="float: right;">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: white;" href="#homepage">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: white;" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: white;" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " style="color: white;" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " style="color: white;" href="#contact">Contact</a>
-                </ul>
+        <div class=" row container mx-auto ">
+                <nav class="navbar navbar-expand-lg navbar-light " style="width: 100%; ">
+                    <a class="navbar-brand text-white" href="#homepage"><h3>Impact</h3></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="display: flex; justify-content: end;">
+                      <div class="navbar-nav" >
+                        <a class="nav-item nav-link " href="#homepgae">Home </a>
+                        <a class="nav-item nav-link " href="#about">About</a>
+                        <a class="nav-item nav-link " href="#services">Services</a>
+                        <a class="nav-item nav-link " href="#team">Team</a>
+                        <a class="nav-item nav-link " href="#contact">Contact</a>
+                      </div>
+                    </div>
+                  </nav>
+                
             </div>
         </div>
     </div>
     <!-- container fluid 2 ends -->
     <!-- container fluid 3 starts -->
-    <div class="container-fluid " style="background-color: #008374; height: 500px; position: relative; color: white;">
+    <div class="container-fluid " style="background-color: #008374;  position: relative; height: 500px; color: white;">
         <div class=" row container mx-auto">
-            <div class="col-6" style="background-color: #008374; float: left; margin-top: 100px;">
+            <div class="col-lg-6" style="background-color: #008374; float: left; margin-top: 100px;">
                 <h1 id="homepage">Welcome to Impact</h1>
                 <p>
                     For 50 years, WWF has been protecting the future of nature. The world's leading conservation
@@ -111,35 +153,35 @@
                     States and close to 5 million globally.
                 </p>
                 <button type="button" class="btn btn-secondary"
-                    style="border-radius: 15px; background-color:#008F81; border: transparent;">Get Started</button>
+                    style="border-radius: 15px; background-color:#008F81; border: transparent; width: 150px;">Get Started</button>
                 <button type="button" class="btn btn-secondary"
-                    style="border: hidden; background-color:#008F81; border: transparent;">Watch video</button>
+                    style="border: hidden; background-color:#008374; border: transparent;"><i class="fa fa-play">&nbsp;</i>Watch video</button>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
                 <img class="img-fluid" src="./images/Week2-Milestone (1).png" alt="Chania" />
             </div>
         </div>
     </div>
     <!-- container fluid 3 ends -->
     <!-- container fluid 4 starts -->
-    <div class="container-fluid" style="position: absolute; top: 500px; color: white;">
-        <div class="row container mx-auto">
-            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
-                <span style="position: relative; top: 50%;"><i class="fas fa-tv" style='font-size:32px'></i></span>
+    <div class="container-fluid" style="position: absolute; top: 500px;  color: white;">
+        <div class="row container mx-auto" style="display: flex; justify-content:space-around ;">
+            <div class="col-sm-2" style="background-color: #008D7D; height:200px; text-align: center; ">
+                <span style="position: relative; top: 40%;"><i class="fas fa-tv" style='font-size:32px'></i></span>
                 <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
 
             </div>
-            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
-                <span style="position: relative; top: 50%;"><i class="fa fa-diamond" style='font-size:32px'></i></span>
+            <div class="col-sm-2" style="background-color: #008D7D; height:200px;  text-align: center; ">
+                <span style="position: relative; top: 40%;"><i class="fa fa-diamond" style='font-size:32px'></i></span>
                 <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
             </div>
-            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
-                <span style="position: relative; top: 50%;"><i class='fas fa-map-marker-alt'
+            <div class="col-sm-2" style="background-color: #008D7D; height:200px;  text-align: center; ">
+                <span style="position: relative; top: 40%;"><i class='fas fa-map-marker-alt'
                         style='font-size:32px'></i></span>
                 <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
             </div>
-            <div class="col" style="background-color: #008D7D; height:200px; margin-right:50px; text-align: center; ">
-                <span style="position: relative; top: 50%;"><i class="fa fa-h-square" style='font-size:32px'
+            <div class="col-sm-2" style="background-color: #008D7D; height:200px; text-align: center; ">
+                <span style="position: relative; top: 40%;"><i class="fa fa-h-square" style='font-size:32px'
                         aria-hidden="true"></i></span>
                 <p style="position: relative; top: 50%;"><b>lorem ipsum</b></p>
             </div>
@@ -318,10 +360,10 @@
                         <br />
                         <small><i>Web Developer</i></small>
                         <div>
-                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-linkedin-square"></i></span>
                         </div>
                 </div>
                 <div class="col col-md-offset-2"
@@ -331,10 +373,10 @@
                         <br />
                         <small><i>Web Developer</i></small>
                         <div>
-                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-linkedin-square"></i></span>
                         </div>
                 </div>
                 <div class="col col-md-offset-2"
@@ -344,10 +386,10 @@
                         <br />
                         <small><i>Web Developer</i></small>
                         <div>
-                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-linkedin-square"></i></span>
                         </div>
                 </div>
                 <div class="col col-md-offset-2"
@@ -357,10 +399,10 @@
                         <br />
                         <small><i>Web Developer</i></small>
                         <div>
-                            <span style="padding:20px;"><i class="fa fa-twitter-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-facebook-square"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-instagram"></i></span>
-                            <span style="padding:20px;"><i class="fa fa-linkedin-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-twitter-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-facebook-square"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-instagram"></i></span>
+                            <span style="padding:15px;"><i class="fa fa-linkedin-square"></i></span>
                         </div>
                 </div>
 
@@ -374,17 +416,16 @@
     <div class="container-fluid " style=" height: 550px;">
         <div class="container">
             <div class="container" style="text-align: center;">
-                <h2 id="contact">Contact</h2>
+                <h2 id="contact"><b>Contact</b></h2>
                 <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magnam ullam aut natus hic
                         facilis necessitatibus.</small></p>
             </div>
             <div class="row">
                 <div class="col-4" style="background-color: #007A6B; height: 450px;">
                     <div class="column">
-                        <div class="row"
+                        <div class="row "
                             style="height:100px; background-color:#008374; border:2px solid #007A6B; margin:10px">
-                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i
-                                    class='fas fa-map-marker-alt' style='font-size:28px'>&nbsp;</i></div>
+                            <div class="col-3" style="text-align: right; padding-right: 0px; top: 25%;"><i class='fas fa-map-marker-alt' style='font-size:28px'>&nbsp;</a></i></div>
                             <div class="col-9" style="text-align: left; padding-left: 0px;top: 15%;">
                                 Location <br /> A108 Adam Street,New York,NY
                             </div>
@@ -479,12 +520,22 @@
             <div class="col-2 mt-5">
                 <h3>Useful Links</h3>
                 <ul style="list-style: none;">
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Service</li>
-                    <li>Terms of service</li>
-                    <li>Privacy policy</li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Terms of Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Privacy policy</a>
                 </ul>
+
             </div>
             <div class="col-2 mt-5">
                 <h3>Our Service</h3>
